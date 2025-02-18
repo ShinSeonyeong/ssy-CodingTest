@@ -1,4 +1,4 @@
-// 1. 
+// 1.  
 function solution(num_list) {
     var even_count = 0;
     var odd_count = 0;
