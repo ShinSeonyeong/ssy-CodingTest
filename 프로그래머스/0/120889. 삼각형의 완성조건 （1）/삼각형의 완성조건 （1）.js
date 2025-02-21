@@ -1,4 +1,12 @@
 
+function solution(sides) {
+    let max_num = Math.max(...sides);
+    let sum = sides.reduce((acc, cur) => acc + cur, 0) - max_num; // 나머지 두 변의 합
+
+    return max_num < sum ? 1 : 2;
+}
+
+
 // function solution(sides) {
 //     var answer = 0;
 //     var res;
@@ -18,9 +26,3 @@
 //     }
 //     return res;
 // }
-function solution(sides) {
-    let max_num = Math.max(...sides);
-    let sum = sides.reduce((acc, cur) => acc + cur, 0) - max_num; // 나머지 두 변의 합
-
-    return max_num < sum ? 1 : 2;
-}
