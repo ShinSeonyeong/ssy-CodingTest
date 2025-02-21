@@ -1,5 +1,3 @@
-// 프로그래머스: 배열의 유사도
-// 1번: for, if문 사용
 var count = 0;
 function solution(s1, s2) {
     for(var i = 0; i < s1.length; i++){
@@ -16,25 +14,3 @@ function solution(s1, s2) {
     console.log(count);
     return count;
 }
-
-2. forEach 사용
-function solution(s1, s2) {
-    // console.log(s1);
-    // console.log(s2);
-    var count = 0;
-
-    s1.forEach(element => {
-        console.log(element);
-        s2.forEach(s2_element => {
-            console.log(s2_element);
-            if(element === s2_element){
-                count ++;
-            }
-        })
-    });
-
-    return count;
-}
-
-console.log(solution(["a", "b", "c"], ["com", "b", "d", "p", "c"]));
-console.log(solution(["n", "omg"], 	["m", "dot"]));
