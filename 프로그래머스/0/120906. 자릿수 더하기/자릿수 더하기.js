@@ -14,3 +14,12 @@ function solution(n) {
     const sum = brr.reduce((a, b) => a + b, 0);
     return sum;
 }
+
+// 더 짧은 버전으로 풀이
+function solution(n) {
+    n = n + '';
+    const sum = n.split('')
+                .map(item => Number(item))
+                .reduce((a, b) => a + b, 0);
+    return sum;
+}
